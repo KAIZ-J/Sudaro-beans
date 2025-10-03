@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudaro Beans</title>
-      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide|Inter|Atma|Poppins|Montserrat' />
-     <script src='https://kit.fontawesome.com/9603c04a31.js' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudaro Beans</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+  <script src="https://kit.fontawesome.com/9603c04a31.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">        
-     <nav>   
-      <div>
-        <img 
-          src="/assets/J6rSv2suTYOEb12E8T1lTA-removebg-preview.png"   
-          alt="sudaro_beans" 
-        />
-      </div>
-      <div id="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#about-page">Packages</a> 
-        <button id="order-btn">Order Now!</button>
-      </div>
-    </nav>
-    <div id="sections">
-        <section class="section" id="hero">
-            <video src="/assets/medium-vecteezy_slow-motion-of-roasted-coffee-beans-falling-organic-coffee_10309814_medium.mp4" loop muted autoplay></video>
-            <h1 class="tracking-in-expand-fwd-top">Sudaro Beans</h1>    
-            <p><i class="tracking-in-expand-fwd">"  Elegance in every bean   "</i></p>  
-            <!-- <button type="button">Packages</button> -->
-        </section> 
-        <section class="section"></section>
-        <section class="section"></section> 
-        <section class="section"></section>
-        <section class="section"></section> 
+<body class="dark">
+  <nav>     
+    <div class="logo">
+      <img src="/assets/sb-icon_imgupscaler.ai_v1_Fast__2K-removebg-preview.png" alt="Sudaro Beans">
     </div>
+    <div id="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#packages">Packages</a> 
+      <button id="order-btn" onclick="callPhone()">Order Now</button>
+    </div>
+  </nav>
+  <section id="hero" class="section">
+    <div class="overlay"></div>
+    <video src="/assets/medium-vecteezy_slow-motion-of-roasted-coffee-beans-falling-organic-coffee_10309814_medium.mp4" loop muted autoplay></video>
+    <div class="hero-content">
+      <h1>Sudaro Beans</h1>    
+      <p>“Elegance in every bean”</p>  
+      <button class="cta-btn" onclick="packagesPage()">Explore Packages</button>
+    </div>
+  </section> 
+
+  <section id="packages" class="section">
+    <h2>Our Packages</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1599Br.</h3>
+        <img src="/assets/image-removebg-preview.png" alt="">
+        <p>1KG</p>
+      </div>
+      <div class="card">
+        <h3>799Br.</h3>
+         
+        
+        <img src="/assets/image-removebg-preview.png" alt="">
+        <p>0.5KG</p>
+      </div>
+    </div>
+  </section>
+  <section id="comment-section">
+    <h2>Leave a comment!</h2>
+    <form action="" class="card">
+      <label for="">
+        Full Name
+          <input type="text" placeholder="Abebe Kebede">
+      </label>
+    <label for=""> 
+      Email Address*
+      <input type="email" placeholder="abekebe59@gmail.com" required>
+    </label>
+      <label for="">
+Your Comment* 
+ <textarea name="" id="" placeholder="The customer service is..." required></textarea>
+      </label>
+     
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+    </form>
+  </section>
+<script src="script.js"></script>
 </body>
 </html>
