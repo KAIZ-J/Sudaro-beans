@@ -50,21 +50,22 @@
   </section>
   <section id="comment-section">
     <h2>Leave a comment!</h2>
-    <form action="" class="card">
+    <form action="https://api.web3forms.com/submit" method="POST" class="card">
+       <input type="hidden" name="access_key" value="e510d517-6c06-4bab-b4e6-d48bbf050c46">
       <label for="">
         Full Name
-          <input type="text" placeholder="Abebe Kebede">
+          <input type="text" placeholder="Abebe Kebede" name="Full name">
       </label>
     <label for=""> 
       Email Address*
-      <input type="email" placeholder="abekebe59@gmail.com" required>
+      <input type="email" placeholder="abekebe59@gmail.com" name="Email" required>
     </label>
       <label for="">
 Your Comment* 
- <textarea name="" id="" placeholder="The customer service is..." required></textarea>
+ <textarea  placeholder="The customer service is..." name="Comment" required></textarea>
       </label>
      
-      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send </button>
     </form>
   </section>
   </div>
