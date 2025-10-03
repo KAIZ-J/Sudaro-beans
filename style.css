@@ -177,7 +177,7 @@ color: var(--accent);
 background-color: var(--accent);
 color: #fff;
     }
-#packages,#comment-section {
+#packages,#comment-section,#follow-us-section {
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -201,7 +201,7 @@ color: #fff;
   border-radius: 15px;
   padding: 2rem;
   width: 250px;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
   cursor: pointer;
   height: 350px; 
   overflow: hidden;
@@ -217,7 +217,7 @@ transform: translate(0px,-80px);
 }
 .card img{
   width:300px;
-  transform: translate(-50px,-40px);
+  transform: translate(-60px,-40px);
   z-index: -1;
 }
 @keyframes swirl-in-fwd {
@@ -246,6 +246,7 @@ transform: translate(0px,-80px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -70px;
 }
  #comment-section form{
   background: rgba(255,255,255,0.05);
@@ -309,3 +310,49 @@ transform: translate(0px,-80px);
   color: var(--accent);
 
  }
+ footer{
+  background: rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  height: 50px; 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+ }
+ footer p{
+font-size: .9rem;
+text-align: center;
+ }
+ #follow-us-section  div{
+    display:flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #follow-us-section h2{
+  font-size: 1.5rem;
+  font-weight: 700; 
+}
+#follow-us-section div a{
+  background: rgba(255,255,255,0.05);
+  width:50px;
+  text-align: center;
+  align-content: center;
+  color: var(--text);
+  height: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  transition: .4s ease;
+  scale:0;
+}
+#follow-us-section div a.show{
+  scale: 1;
+}
+#follow-us-section div a:hover{
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}

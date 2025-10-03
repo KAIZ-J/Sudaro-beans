@@ -10,8 +10,9 @@ const observer = new IntersectionObserver((entries) => {
 }, {});
 const cards = document.querySelectorAll(".card");
 cards.forEach((el) => observer.observe(el));
+document.getElementById("follow-us-section").querySelectorAll("a").forEach((el) => observer.observe(el));
 function callPhone() {
-  window.location.href = `tel:+251923984321`;
+  window.location.href = `tel:+251956334243`;
 }
 function packagesPage() {
   document.getElementById("packages").scrollIntoView({ behavior: "smooth" });
