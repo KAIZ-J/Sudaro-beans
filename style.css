@@ -256,14 +256,18 @@ transform: translate(0px,-80px);
   width: 60%; 
   max-width: 400px;
   min-width: 300px;
-  transition: transform 0.3s ease;
-  height: 430px;
+  transition:  0.8s ease;
+  height: 430px; 
   display: flex;
   flex-direction: column;
   gap: 20px;
-  translate: 50%;
+  translate: -50%;
     opacity: 0;
  }
+#comment-form.show{
+  translate: 0%;
+    opacity: 1; 
+}
  #comment-section form:hover{
   transform: none;
  }
@@ -346,7 +350,7 @@ text-align: center;
   height: 50px;
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 15px;
-  transition: .4s ease;
+  transition: .6s ease;
   scale:0;
 }
 #follow-us-section div a.show{
